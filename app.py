@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app,resources={r"/api/*": {"origins": "http://localhost:3000"}})  # Enable CORS for all routes
+CORS(app,resources={r"/api/*": {"origins": "https://healthcare-translator-wn42.vercel.app/"}})  # Enable CORS for all routes
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
